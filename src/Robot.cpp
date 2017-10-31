@@ -178,9 +178,9 @@ public:
 
 
 		//Read Gyro Angle
-		double DriveAngle = ahrs->GetAngle();
+		//double DriveAngle = ahrs->GetAngle();
 
-		Adrive.MecanumDrive_Cartesian(OutputZ, OutputY, OutputX, DriveAngle);
+		Adrive.MecanumDrive_Cartesian(OutputZ, OutputY, OutputX);
 
 		//drive
 		if (Drivestick.GetRawButton(4)) {
